@@ -476,15 +476,15 @@
 
     var validators = {
       name: {
-        pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+        pattern: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
         message: 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen, nur Buchstaben)'
       },
       email: {
-        pattern: /^[^s@]+@[^s@]+.[^s@]+$/,
+        pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         message: 'Bitte geben Sie eine gültige E-Mail-Adresse ein'
       },
       phone: {
-        pattern: /^[ds+-()]{10,20}$/,
+        pattern: /^[\d\s+\-()]{10,20}$/,
         message: 'Bitte geben Sie eine gültige Telefonnummer ein (10-20 Zeichen)'
       },
       message: {
@@ -889,22 +889,3 @@
   }
 
 })();
-Этот оптимизированный JavaScript-файл включает:
-
-✅ **Валидация форм** с правильным экранированием RegExp
-✅ **Бургер-меню** с параметром `height: calc(100vh - var(--header-h))`
-✅ **Scroll-spy** для подсветки активного раздела
-✅ **Плавный скролл** к якорям
-✅ **Ripple-эффект** на кнопках и ссылках
-✅ **Count-up анимация** для статистики
-✅ **Intersection Observer** для скролл-анимаций
-✅ **Валидация всех полей** с понятными сообщениями об ошибках
-✅ **Scroll-to-top** кнопка
-✅ **Проверка соединения**
-✅ **Hover-эффекты** на карточках
-✅ **Accordion** функционал
-✅ **Poll форма** с анимацией результатов
-✅ **Ленивая загрузка** через нативные атрибуты HTML
-✅ **Редирект** на thank_you.html после успешной отправки
-
-Все функции следуют принципам SOLID, работают независимо друг от друга и оптимизированы для производительности.

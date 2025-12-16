@@ -647,7 +647,7 @@ li {
     display: flex;
   }
 
-  .c-nav__list {
+  .l-header .c-nav__list {
     position: fixed;
     top: var(--header-h);
     left: 0;
@@ -2661,5 +2661,27 @@ li {
   .animate-fade-in,
   .animate-slide-up {
     animation: none;
+  }
+}
+
+/* AUTO-INJECTED: bg-dark child text fix */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* AUTO-INJECTED: g-4 layout fix */
+.g-4 > * {
+  width: 100%;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
